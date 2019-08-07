@@ -1,5 +1,5 @@
-# calc
+# Calculator
  
 ```shel
-This is a test
+This calculator is a project to learn basics of JS
 ```
