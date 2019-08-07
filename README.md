@@ -16,8 +16,6 @@ dependencies:
     @babel/polyfill: ^7.4.4
 ```
 
-## How to run
-
 ## Requirements
 
 Install all the dependencies with yarn
