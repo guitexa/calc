@@ -6,26 +6,20 @@ export class Calcular {
     this.getSomaV2 = document.querySelector('#somaV2');
 
     this.getBtSomar = document.querySelector('#btSomar');
-    this.somar();
-
+    this.getBtSomar.onclick = event => this.Somar(event);
+    
     this.getRespMultip = document.querySelector('#respMultip');
-
+    
     this.getMultipV1 = document.querySelector('#multipV1');
     this.getMultipV2 = document.querySelector('#multipV2');
-
+    
     this.getBtMultip = document.querySelector('#btMultip');
-    this.multiplicar();
+    this.getBtMultip.onclick = event => this.Multiplicar(event);
   }
 
-  somar() {
-    this.getBtSomar.onclick = () => this.calcSoma();
-  }
+  Somar () {
+    event.preventDefault()
 
-  multiplicar() {
-    this.getBtMultip.onclick = () => this.calcMultip();
-  }
-
-  calcSoma () {
     let v1 = Number(this.getSomaV1.value);
     let v2 = Number(this.getSomaV2.value);
 
@@ -39,7 +33,9 @@ export class Calcular {
     }
   }
 
-  calcMultip () {
+  Multiplicar () {
+    event.preventDefault()
+    
     let v1 = Number(this.getMultipV1.value);
     let v2 = Number(this.getMultipV2.value);
 

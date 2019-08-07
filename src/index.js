@@ -24,7 +24,7 @@ somaV2.style.width = '50px';
 somar.appendChild(somaV2);
 
 const btSomar = document.createElement('button');
-btSomar.setAttribute('type', 'button');
+btSomar.setAttribute('type', 'submit');
 btSomar.setAttribute('id', 'btSomar');
 btSomar.style.margin = '0 12px';
 btSomar.innerHTML = 'Somar';
@@ -57,7 +57,7 @@ multipV2.style.width = '50px';
 multiplicar.appendChild(multipV2);
 
 const btMultip = document.createElement('button');
-btMultip.setAttribute('type', 'button');
+btMultip.setAttribute('type', 'submit');
 btMultip.setAttribute('id', 'btMultip');
 btMultip.style.margin = '0 12px';
 btMultip.innerHTML = 'Multiplicar';
