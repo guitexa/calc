@@ -67,5 +67,4 @@ const respMultip = document.createElement('span');
 respMultip.setAttribute('id', 'respMultip');
 multiplicar.appendChild(respMultip);
 
-
 new Calcular();
