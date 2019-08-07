@@ -4,6 +4,8 @@
 This calculator is a project created to learn basics of JS
 ```
 
+## Dependencies Used in this project
+
 ```shel
 devDependencies: 
     @babel/core: ^7.5.5
