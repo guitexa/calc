@@ -47,7 +47,7 @@ multiplicar.appendChild(multipV1);
 
 const vezes = document.createElement('span');
 vezes.style.margin = '0 8px';
-vezes.innerHTML = '+';
+vezes.innerHTML = '*';
 multiplicar.appendChild(vezes);
 
 const multipV2 = document.createElement('input');
