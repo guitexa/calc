@@ -1,4 +1,4 @@
-import { Calcular } from './calcular';
+import Calcular from './calcular';
 
 const app = document.querySelector('#app');
 
@@ -33,7 +33,6 @@ somar.appendChild(btSomar);
 const respSoma = document.createElement('span');
 respSoma.setAttribute('id', 'respSoma');
 somar.appendChild(respSoma);
-
 
 // MULTIPLICAR
 const multiplicar = document.createElement('form');

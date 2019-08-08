@@ -1,4 +1,4 @@
-export class Calcular {
+export default class Calcular {
   constructor() {
     this.getRespSoma = document.querySelector('#respSoma');
 
@@ -7,43 +7,43 @@ export class Calcular {
 
     this.getBtSomar = document.querySelector('#btSomar');
     this.getBtSomar.onclick = event => this.Somar(event);
-    
+
     this.getRespMultip = document.querySelector('#respMultip');
-    
+
     this.getMultipV1 = document.querySelector('#multipV1');
     this.getMultipV2 = document.querySelector('#multipV2');
-    
+
     this.getBtMultip = document.querySelector('#btMultip');
     this.getBtMultip.onclick = event => this.Multiplicar(event);
   }
 
-  Somar () {
-    event.preventDefault()
+  Somar(event) {
+    event.preventDefault();
 
-    let v1 = Number(this.getSomaV1.value);
-    let v2 = Number(this.getSomaV2.value);
+    const v1 = Number(this.getSomaV1.value);
+    const v2 = Number(this.getSomaV2.value);
 
-    if (v1 == '' || v2 == '') {
+    if (v1 <= 0 || v2 <= 0) {
       this.getRespSoma.innerHTML = 'Type something';
     } else {
       this.getRespSoma.innerHTML = v1 + v2;
-  
+
       this.getSomaV1.value = '';
       this.getSomaV2.value = '';
     }
   }
 
-  Multiplicar () {
-    event.preventDefault()
-    
-    let v1 = Number(this.getMultipV1.value);
-    let v2 = Number(this.getMultipV2.value);
+  Multiplicar(event) {
+    event.preventDefault();
 
-    if (v1 == '' || v2 == '') {
+    const v1 = Number(this.getMultipV1.value);
+    const v2 = Number(this.getMultipV2.value);
+
+    if (v1 <= 0 || v2 <= 0) {
       this.getRespMultip.innerHTML = 'Type something';
     } else {
       this.getRespMultip.innerHTML = v1 * v2;
-  
+
       this.getMultipV1.value = '';
       this.getMultipV2.value = '';
     }
