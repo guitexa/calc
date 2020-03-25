@@ -1,6 +1,14 @@
+import React from 'react';
+import { render } from 'react-dom';
+
+import './Style.css';
+
+import Title from './Title';
 import Calcular from './calcular';
 
 const app = document.querySelector('#app');
+
+render(<Title />, document.querySelector('#app'));
 
 // SOMAR
 const somar = document.createElement('form');
